@@ -16,6 +16,8 @@
 		04DBBCFE2CFE89BD0007F317 /* STCGitAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBBCFD2CFE89BD0007F317 /* STCGitAppUITestsLaunchTests.swift */; };
 		04DBBD0B2CFE89FF0007F317 /* Infrastructure in Resources */ = {isa = PBXBuildFile; fileRef = 04DBBD0A2CFE89FF0007F317 /* Infrastructure */; };
 		04DBBD0C2CFE89FF0007F317 /* Infrastructure in Resources */ = {isa = PBXBuildFile; fileRef = 04DBBD0A2CFE89FF0007F317 /* Infrastructure */; };
+		04DBBD0E2CFE8A250007F317 /* Coordinator in Resources */ = {isa = PBXBuildFile; fileRef = 04DBBD0D2CFE8A250007F317 /* Coordinator */; };
+		04DBBD0F2CFE8A250007F317 /* Coordinator in Resources */ = {isa = PBXBuildFile; fileRef = 04DBBD0D2CFE8A250007F317 /* Coordinator */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 		04DBBCFB2CFE89BD0007F317 /* STCGitAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCGitAppUITests.swift; sourceTree = "<group>"; };
 		04DBBCFD2CFE89BD0007F317 /* STCGitAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCGitAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04DBBD0A2CFE89FF0007F317 /* Infrastructure */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Infrastructure; sourceTree = "<group>"; };
+		04DBBD0D2CFE8A250007F317 /* Coordinator */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Coordinator; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 		04DBBCDF2CFE89BA0007F317 /* STCGitApp */ = {
 			isa = PBXGroup;
 			children = (
+				04DBBD0D2CFE8A250007F317 /* Coordinator */,
 				04DBBD0A2CFE89FF0007F317 /* Infrastructure */,
 				04DBBCE02CFE89BA0007F317 /* STCGitAppApp.swift */,
 				04DBBCE22CFE89BA0007F317 /* ContentView.swift */,
@@ -238,6 +242,7 @@
 				04DBBCE82CFE89BC0007F317 /* Preview Assets.xcassets in Resources */,
 				04DBBD0B2CFE89FF0007F317 /* Infrastructure in Resources */,
 				04DBBCE52CFE89BC0007F317 /* Assets.xcassets in Resources */,
+				04DBBD0E2CFE8A250007F317 /* Coordinator in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DBBD0C2CFE89FF0007F317 /* Infrastructure in Resources */,
+				04DBBD0F2CFE8A250007F317 /* Coordinator in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
