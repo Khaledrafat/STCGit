@@ -7,11 +7,17 @@
 
 import Foundation
 
+//MARK: - Inputs
 protocol UserGitReposInput {
-    func viewdidload()
+    func viewDidLoad()
 }
 
-protocol UserGitRepos: UserGitReposInput {
+//MARK: - Outputs
+protocol UserGitReposOutput {
+    var gitRepos: Observable<GitRepos> { get }
+}
+
+protocol UserGitRepos: UserGitReposInput, UserGitReposOutput {
     
 }
 
@@ -21,6 +27,9 @@ final class UserGitReposViewModel {
     private let userGitReposUseCases: UserGitReposUseCases
     private let selectedUser: User
     
+    var gitRepos: Observable<GitRepos> = Observable([])
+    
+    //MARK: - INIT
     init(userGitReposUseCases: UserGitReposUseCases, seletedUser: User) {
         self.userGitReposUseCases = userGitReposUseCases
         self.selectedUser = seletedUser
@@ -28,7 +37,20 @@ final class UserGitReposViewModel {
 }
 
 extension UserGitReposViewModel: UserGitRepos {
-    func viewdidload() {
-        
+    
+    //MARK: - viewdidload
+    func viewDidLoad() {
+        self.userGitReposUseCases.fetchUserRepos(userName: self.selectedUser.login.defaultValue) { result in
+            switch result {
+            case .success(let repos):
+                DispatchQueue.main.async {[weak self] in
+                    guard let self = self else { return }
+                    self.gitRepos.value = repos
+                }
+            case .failure(let error):
+                print("Error")
+                print(error.localizedDescription)
+            }
+        }
     }
 }

@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserGitReposView" customModule="STCGitApp" customModuleProvider="target">
             <connections>
+                <outlet property="backButton" destination="Cqu-w8-Ucw" id="a5p-FP-Wgb"/>
                 <outlet property="reposTableView" destination="8zy-q7-7Ng" id="l17-Zw-Oql"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,16 +22,30 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8zy-q7-7Ng">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="104" width="414" height="758"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqu-w8-Ucw">
+                    <rect key="frame" x="334" y="44" width="80" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="3OR-tF-r1k"/>
+                        <constraint firstAttribute="height" constant="40" id="VtW-xj-gde"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                    <connections>
+                        <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="B0I-Hc-mgC"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8zy-q7-7Ng" secondAttribute="bottom" id="27U-y8-ZSf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cqu-w8-Ucw" secondAttribute="trailing" id="Cmt-Pe-iGa"/>
                 <constraint firstItem="8zy-q7-7Ng" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GQ6-5Q-87s"/>
-                <constraint firstItem="8zy-q7-7Ng" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LJh-9s-6bl"/>
+                <constraint firstItem="8zy-q7-7Ng" firstAttribute="top" secondItem="Cqu-w8-Ucw" secondAttribute="bottom" constant="20" id="rFk-22-32J"/>
+                <constraint firstItem="Cqu-w8-Ucw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="tdp-TF-mpW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8zy-q7-7Ng" secondAttribute="trailing" id="vn9-Mu-JFJ"/>
             </constraints>
             <point key="canvasLocation" x="55" y="65"/>

@@ -19,7 +19,8 @@ struct UIKitViewControllerWrapper: UIViewControllerRepresentable {
     }
     
     func makeUIViewController(context: Context) -> UserGitReposView {
-        let useCases = DefaultUserGitReposUseCases()
+        let repo = defaultGitRepos()
+        let useCases = DefaultUserGitReposUseCases(gitRepos: repo)
         let viewModel = UserGitReposViewModel(userGitReposUseCases: useCases, seletedUser: user)
         let vc = UserGitReposView()
         vc.viewModel = viewModel
