@@ -22,6 +22,8 @@
 		04DBBD122CFE8A3C0007F317 /* Presentaion in Resources */ = {isa = PBXBuildFile; fileRef = 04DBBD102CFE8A3C0007F317 /* Presentaion */; };
 		04DBBD1A2CFE8AB40007F317 /* Domain in Resources */ = {isa = PBXBuildFile; fileRef = 04DBBD192CFE8AB40007F317 /* Domain */; };
 		04DBBD1B2CFE8AB40007F317 /* Domain in Resources */ = {isa = PBXBuildFile; fileRef = 04DBBD192CFE8AB40007F317 /* Domain */; };
+		04DBBD1D2CFE8AC70007F317 /* Helper in Resources */ = {isa = PBXBuildFile; fileRef = 04DBBD1C2CFE8AC70007F317 /* Helper */; };
+		04DBBD1E2CFE8AC70007F317 /* Helper in Resources */ = {isa = PBXBuildFile; fileRef = 04DBBD1C2CFE8AC70007F317 /* Helper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,7 @@
 		04DBBD0D2CFE8A250007F317 /* Coordinator */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Coordinator; sourceTree = "<group>"; };
 		04DBBD102CFE8A3C0007F317 /* Presentaion */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Presentaion; sourceTree = "<group>"; };
 		04DBBD192CFE8AB40007F317 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Domain; sourceTree = "<group>"; };
+		04DBBD1C2CFE8AC70007F317 /* Helper */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Helper; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,7 @@
 		04DBBCDF2CFE89BA0007F317 /* STCGitApp */ = {
 			isa = PBXGroup;
 			children = (
+				04DBBD1C2CFE8AC70007F317 /* Helper */,
 				04DBBD192CFE8AB40007F317 /* Domain */,
 				04DBBD102CFE8A3C0007F317 /* Presentaion */,
 				04DBBD0D2CFE8A250007F317 /* Coordinator */,
@@ -252,6 +256,7 @@
 				04DBBD0B2CFE89FF0007F317 /* Infrastructure in Resources */,
 				04DBBD112CFE8A3C0007F317 /* Presentaion in Resources */,
 				04DBBCE52CFE89BC0007F317 /* Assets.xcassets in Resources */,
+				04DBBD1D2CFE8AC70007F317 /* Helper in Resources */,
 				04DBBD0E2CFE8A250007F317 /* Coordinator in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DBBD1E2CFE8AC70007F317 /* Helper in Resources */,
 				04DBBD0C2CFE89FF0007F317 /* Infrastructure in Resources */,
 				04DBBD0F2CFE8A250007F317 /* Coordinator in Resources */,
 				04DBBD1B2CFE8AB40007F317 /* Domain in Resources */,
