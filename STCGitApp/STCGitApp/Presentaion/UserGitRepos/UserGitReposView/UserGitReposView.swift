@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserGitReposView: UIViewController {
+class UserGitReposView: BaseViewController {
     
     //Outlets
     @IBOutlet weak var reposTableView: UITableView!

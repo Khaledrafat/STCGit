@@ -17,6 +17,26 @@
 		04CF88542CFF9DCF00678114 /* ForkedUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88522CFF9DCF00678114 /* ForkedUsersViewController.swift */; };
 		04CF88552CFF9DCF00678114 /* ForkedUsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CF88532CFF9DCF00678114 /* ForkedUsersViewController.xib */; };
 		04CF88592CFF9E0E00678114 /* ForkedUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88582CFF9E0E00678114 /* ForkedUsersViewModel.swift */; };
+		04CF885C2CFFA07F00678114 /* ForkedUsersUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF885B2CFFA07F00678114 /* ForkedUsersUseCases.swift */; };
+		04CF885D2CFFA07F00678114 /* ForkedUsersUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF885B2CFFA07F00678114 /* ForkedUsersUseCases.swift */; };
+		04CF885F2CFFA0CA00678114 /* ForkedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF885E2CFFA0CA00678114 /* ForkedUser.swift */; };
+		04CF88602CFFA0CA00678114 /* ForkedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF885E2CFFA0CA00678114 /* ForkedUser.swift */; };
+		04CF88622CFFAE3D00678114 /* ForkedUsersQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88612CFFAE3D00678114 /* ForkedUsersQuery.swift */; };
+		04CF88632CFFAE3D00678114 /* ForkedUsersQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88612CFFAE3D00678114 /* ForkedUsersQuery.swift */; };
+		04CF88662CFFAF1C00678114 /* ForkedUserRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88652CFFAF1C00678114 /* ForkedUserRepo.swift */; };
+		04CF88672CFFAF1C00678114 /* ForkedUserRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88652CFFAF1C00678114 /* ForkedUserRepo.swift */; };
+		04CF88692CFFAF8500678114 /* ForkedUserRepoImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88682CFFAF8500678114 /* ForkedUserRepoImp.swift */; };
+		04CF886A2CFFAF8500678114 /* ForkedUserRepoImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88682CFFAF8500678114 /* ForkedUserRepoImp.swift */; };
+		04CF886C2CFFB2F900678114 /* ForkedUsersViewController+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF886B2CFFB2F900678114 /* ForkedUsersViewController+Collection.swift */; };
+		04CF886D2CFFB2F900678114 /* ForkedUsersViewController+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF886B2CFFB2F900678114 /* ForkedUsersViewController+Collection.swift */; };
+		04CF88762CFFD4D900678114 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88752CFFD4D900678114 /* BaseViewController.swift */; };
+		04CF88772CFFD4D900678114 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88752CFFD4D900678114 /* BaseViewController.swift */; };
+		04CF887A2CFFE42E00678114 /* ForkedUserSwiftUICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88792CFFE42E00678114 /* ForkedUserSwiftUICell.swift */; };
+		04CF887B2CFFE42E00678114 /* ForkedUserSwiftUICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88792CFFE42E00678114 /* ForkedUserSwiftUICell.swift */; };
+		04CF887E2CFFF2D600678114 /* ForkedUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF887C2CFFF2D600678114 /* ForkedUserCell.swift */; };
+		04CF887F2CFFF2D600678114 /* ForkedUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF887C2CFFF2D600678114 /* ForkedUserCell.swift */; };
+		04CF88802CFFF2D600678114 /* ForkedUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CF887D2CFFF2D600678114 /* ForkedUserCell.xib */; };
+		04CF88812CFFF2D600678114 /* ForkedUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CF887D2CFFF2D600678114 /* ForkedUserCell.xib */; };
 		04DBBCE12CFE89BA0007F317 /* STCGitAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBBCE02CFE89BA0007F317 /* STCGitAppApp.swift */; };
 		04DBBCE52CFE89BC0007F317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DBBCE42CFE89BC0007F317 /* Assets.xcassets */; };
 		04DBBCE82CFE89BC0007F317 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DBBCE72CFE89BC0007F317 /* Preview Assets.xcassets */; };
@@ -85,6 +105,16 @@
 		04CF88522CFF9DCF00678114 /* ForkedUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkedUsersViewController.swift; sourceTree = "<group>"; };
 		04CF88532CFF9DCF00678114 /* ForkedUsersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForkedUsersViewController.xib; sourceTree = "<group>"; };
 		04CF88582CFF9E0E00678114 /* ForkedUsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkedUsersViewModel.swift; sourceTree = "<group>"; };
+		04CF885B2CFFA07F00678114 /* ForkedUsersUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkedUsersUseCases.swift; sourceTree = "<group>"; };
+		04CF885E2CFFA0CA00678114 /* ForkedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkedUser.swift; sourceTree = "<group>"; };
+		04CF88612CFFAE3D00678114 /* ForkedUsersQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkedUsersQuery.swift; sourceTree = "<group>"; };
+		04CF88652CFFAF1C00678114 /* ForkedUserRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkedUserRepo.swift; sourceTree = "<group>"; };
+		04CF88682CFFAF8500678114 /* ForkedUserRepoImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkedUserRepoImp.swift; sourceTree = "<group>"; };
+		04CF886B2CFFB2F900678114 /* ForkedUsersViewController+Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForkedUsersViewController+Collection.swift"; sourceTree = "<group>"; };
+		04CF88752CFFD4D900678114 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		04CF88792CFFE42E00678114 /* ForkedUserSwiftUICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkedUserSwiftUICell.swift; sourceTree = "<group>"; };
+		04CF887C2CFFF2D600678114 /* ForkedUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkedUserCell.swift; sourceTree = "<group>"; };
+		04CF887D2CFFF2D600678114 /* ForkedUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForkedUserCell.xib; sourceTree = "<group>"; };
 		04DBBCDD2CFE89BA0007F317 /* STCGitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STCGitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DBBCE02CFE89BA0007F317 /* STCGitAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCGitAppApp.swift; sourceTree = "<group>"; };
 		04DBBCE42CFE89BC0007F317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,7 +196,9 @@
 		04CF88562CFF9DE400678114 /* ForkedUsersView */ = {
 			isa = PBXGroup;
 			children = (
+				04CF886E2CFFB4D500678114 /* ForkedUserCell */,
 				04CF88522CFF9DCF00678114 /* ForkedUsersViewController.swift */,
+				04CF886B2CFFB2F900678114 /* ForkedUsersViewController+Collection.swift */,
 				04CF88532CFF9DCF00678114 /* ForkedUsersViewController.xib */,
 			);
 			path = ForkedUsersView;
@@ -178,6 +210,40 @@
 				04CF88582CFF9E0E00678114 /* ForkedUsersViewModel.swift */,
 			);
 			path = ForkedUsersViewModel;
+			sourceTree = "<group>";
+		};
+		04CF885A2CFFA06A00678114 /* ForkedUsers */ = {
+			isa = PBXGroup;
+			children = (
+				04CF885B2CFFA07F00678114 /* ForkedUsersUseCases.swift */,
+			);
+			path = ForkedUsers;
+			sourceTree = "<group>";
+		};
+		04CF88642CFFAF0E00678114 /* ForkedUser */ = {
+			isa = PBXGroup;
+			children = (
+				04CF88652CFFAF1C00678114 /* ForkedUserRepo.swift */,
+			);
+			path = ForkedUser;
+			sourceTree = "<group>";
+		};
+		04CF886E2CFFB4D500678114 /* ForkedUserCell */ = {
+			isa = PBXGroup;
+			children = (
+				04CF88792CFFE42E00678114 /* ForkedUserSwiftUICell.swift */,
+				04CF887C2CFFF2D600678114 /* ForkedUserCell.swift */,
+				04CF887D2CFFF2D600678114 /* ForkedUserCell.xib */,
+			);
+			path = ForkedUserCell;
+			sourceTree = "<group>";
+		};
+		04CF88782CFFE3BD00678114 /* UserRow */ = {
+			isa = PBXGroup;
+			children = (
+				04DCAEC42CFEA32B002A0B3F /* UserRow.swift */,
+			);
+			path = UserRow;
 			sourceTree = "<group>";
 		};
 		04DBBCD42CFE89BA0007F317 = {
@@ -254,6 +320,7 @@
 			children = (
 				04DCAE8E2CFEA235002A0B3F /* UsersRepoImp.swift */,
 				04CF88452CFF688900678114 /* GitReposImp.swift */,
+				04CF88682CFFAF8500678114 /* ForkedUserRepoImp.swift */,
 			);
 			path = "Repos Implementation";
 			sourceTree = "<group>";
@@ -264,6 +331,7 @@
 				04DCAE932CFEA24E002A0B3F /* Helper.swift */,
 				04DCAE922CFEA24E002A0B3F /* SwiftuiWrapper.swift */,
 				04CF88432CFF674300678114 /* Obervable.swift */,
+				04CF88752CFFD4D900678114 /* BaseViewController.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -283,6 +351,8 @@
 			children = (
 				04DCAE9A2CFEA274002A0B3F /* User.swift */,
 				04CF884A2CFF691E00678114 /* GitRepo.swift */,
+				04CF88612CFFAE3D00678114 /* ForkedUsersQuery.swift */,
+				04CF885E2CFFA0CA00678114 /* ForkedUser.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -290,6 +360,7 @@
 		04DCAE9D2CFEA27E002A0B3F /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				04CF88642CFFAF0E00678114 /* ForkedUser */,
 				04DCAE9F2CFEA28A002A0B3F /* Users */,
 				04DCAE9E2CFEA284002A0B3F /* GitRepo */,
 			);
@@ -315,6 +386,7 @@
 		04DCAEA62CFEA2A6002A0B3F /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				04CF885A2CFFA06A00678114 /* ForkedUsers */,
 				04CF88472CFF68F600678114 /* GitRepos */,
 				04DCAEA72CFEA2AC002A0B3F /* Users */,
 			);
@@ -396,7 +468,7 @@
 		04DCAEC12CFEA320002A0B3F /* UsersView */ = {
 			isa = PBXGroup;
 			children = (
-				04DCAEC42CFEA32B002A0B3F /* UserRow.swift */,
+				04CF88782CFFE3BD00678114 /* UserRow */,
 				04DCAEC32CFEA32B002A0B3F /* UsersView.swift */,
 			);
 			path = UsersView;
@@ -526,6 +598,7 @@
 				04CF88552CFF9DCF00678114 /* ForkedUsersViewController.xib in Resources */,
 				04CF88502CFF79AF00678114 /* UserGitRepoCell.xib in Resources */,
 				04DBBCE52CFE89BC0007F317 /* Assets.xcassets in Resources */,
+				04CF88802CFFF2D600678114 /* ForkedUserCell.xib in Resources */,
 				04DCAEB92CFEA304002A0B3F /* UserGitReposView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +608,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DCAEBA2CFEA304002A0B3F /* UserGitReposView.xib in Resources */,
+				04CF88812CFFF2D600678114 /* ForkedUserCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,17 +635,26 @@
 				04CF88592CFF9E0E00678114 /* ForkedUsersViewModel.swift in Sources */,
 				04CF88462CFF688900678114 /* GitReposImp.swift in Sources */,
 				04CF88542CFF9DCF00678114 /* ForkedUsersViewController.swift in Sources */,
+				04CF88692CFFAF8500678114 /* ForkedUserRepoImp.swift in Sources */,
 				04CF88442CFF674300678114 /* Obervable.swift in Sources */,
 				04DCAEC52CFEA32B002A0B3F /* UsersView.swift in Sources */,
+				04CF88622CFFAE3D00678114 /* ForkedUsersQuery.swift in Sources */,
+				04CF88762CFFD4D900678114 /* BaseViewController.swift in Sources */,
 				04DCAEBB2CFEA304002A0B3F /* UserGitReposView.swift in Sources */,
+				04CF886C2CFFB2F900678114 /* ForkedUsersViewController+Collection.swift in Sources */,
 				04DCAE962CFEA24E002A0B3F /* Helper.swift in Sources */,
+				04CF887E2CFFF2D600678114 /* ForkedUserCell.swift in Sources */,
+				04CF885C2CFFA07F00678114 /* ForkedUsersUseCases.swift in Sources */,
 				04DCAECA2CFEA330002A0B3F /* UserVM.swift in Sources */,
+				04CF885F2CFFA0CA00678114 /* ForkedUser.swift in Sources */,
 				04DCAECE2CFEA353002A0B3F /* Coordinator.swift in Sources */,
 				04CF884F2CFF79AF00678114 /* UserGitRepoCell.swift in Sources */,
 				04DCAEA92CFEA2B1002A0B3F /* UsersUseCases.swift in Sources */,
 				04CF88492CFF690D00678114 /* GitReposRepo.swift in Sources */,
 				04DCAEA12CFEA291002A0B3F /* GitRepoUseCases.swift in Sources */,
 				04DBBCE12CFE89BA0007F317 /* STCGitAppApp.swift in Sources */,
+				04CF88662CFFAF1C00678114 /* ForkedUserRepo.swift in Sources */,
+				04CF887A2CFFE42E00678114 /* ForkedUserSwiftUICell.swift in Sources */,
 				04CF884B2CFF691E00678114 /* GitRepo.swift in Sources */,
 				04DCAE9B2CFEA274002A0B3F /* User.swift in Sources */,
 				04DCAEB12CFEA2D4002A0B3F /* Requestable.swift in Sources */,
@@ -586,18 +669,27 @@
 				04DCAECF2CFEA353002A0B3F /* Coordinator.swift in Sources */,
 				04DBBCF22CFE89BD0007F317 /* STCGitAppTests.swift in Sources */,
 				04DCAECB2CFEA330002A0B3F /* UserVM.swift in Sources */,
+				04CF886A2CFFAF8500678114 /* ForkedUserRepoImp.swift in Sources */,
 				04DCAEA52CFEA295002A0B3F /* UsersRepo.swift in Sources */,
+				04CF887B2CFFE42E00678114 /* ForkedUserSwiftUICell.swift in Sources */,
+				04CF88772CFFD4D900678114 /* BaseViewController.swift in Sources */,
 				04DCAE902CFEA235002A0B3F /* UsersRepoImp.swift in Sources */,
 				04DCAEA22CFEA291002A0B3F /* GitRepoUseCases.swift in Sources */,
 				04DCAEAA2CFEA2B1002A0B3F /* UsersUseCases.swift in Sources */,
+				04CF88602CFFA0CA00678114 /* ForkedUser.swift in Sources */,
 				04DCAEB22CFEA2D4002A0B3F /* Requestable.swift in Sources */,
 				04DCAEB02CFEA2D4002A0B3F /* Network.swift in Sources */,
 				04DCAEBC2CFEA304002A0B3F /* UserGitReposView.swift in Sources */,
+				04CF885D2CFFA07F00678114 /* ForkedUsersUseCases.swift in Sources */,
 				04DCAE9C2CFEA274002A0B3F /* User.swift in Sources */,
 				04DCAEC62CFEA32B002A0B3F /* UsersView.swift in Sources */,
+				04CF887F2CFFF2D600678114 /* ForkedUserCell.swift in Sources */,
 				04DCAE952CFEA24E002A0B3F /* SwiftuiWrapper.swift in Sources */,
+				04CF88672CFFAF1C00678114 /* ForkedUserRepo.swift in Sources */,
+				04CF88632CFFAE3D00678114 /* ForkedUsersQuery.swift in Sources */,
 				04DCAEC82CFEA32B002A0B3F /* UserRow.swift in Sources */,
 				04DCAEBF2CFEA308002A0B3F /* UserGitReposViewModel.swift in Sources */,
+				04CF886D2CFFB2F900678114 /* ForkedUsersViewController+Collection.swift in Sources */,
 				04DCAE972CFEA24E002A0B3F /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

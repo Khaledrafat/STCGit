@@ -27,7 +27,7 @@ final class DefaultUsersViewModel: ObservableObject {
     }
 }
 
-//MARK: - Inputs
+//MARK: - Implementation
 extension DefaultUsersViewModel: UsersViewModel {
     func viewdidload() {
         self.usersUseCases.fetchUsers {[weak self] result in
