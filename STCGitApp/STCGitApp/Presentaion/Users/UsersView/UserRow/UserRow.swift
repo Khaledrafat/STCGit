@@ -10,7 +10,18 @@ import SwiftUI
 struct UserRow: View {
     
     var user: User?
+    var action: (()->())?
+    
     var body: some View {
+        ZStack{
+            containerView
+            Button("") {
+                action?()
+            }
+        }
+    }
+    
+    var containerView: some View {
         VStack {
             HStack(spacing: 24) {
                 Spacer()

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04C4635E2D00A51800E24BF3 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4635D2D00A51800E24BF3 /* Loader.swift */; };
+		04C463602D00CE3500E24BF3 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4635F2D00CE3500E24BF3 /* AlertView.swift */; };
+		04C463622D00F5EA00E24BF3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C463612D00F5EA00E24BF3 /* Constants.swift */; };
 		04CF88422CFF637300678114 /* UserGitReposView+tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88412CFF637300678114 /* UserGitReposView+tableView.swift */; };
 		04CF88442CFF674300678114 /* Obervable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88432CFF674300678114 /* Obervable.swift */; };
 		04CF88462CFF688900678114 /* GitReposImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88452CFF688900678114 /* GitReposImp.swift */; };
@@ -96,6 +98,8 @@
 
 /* Begin PBXFileReference section */
 		04C4635D2D00A51800E24BF3 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		04C4635F2D00CE3500E24BF3 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		04C463612D00F5EA00E24BF3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		04CF88412CFF637300678114 /* UserGitReposView+tableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserGitReposView+tableView.swift"; sourceTree = "<group>"; };
 		04CF88432CFF674300678114 /* Obervable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obervable.swift; sourceTree = "<group>"; };
 		04CF88452CFF688900678114 /* GitReposImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitReposImp.swift; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 			children = (
 				04CF88792CFFE42E00678114 /* ForkedUserSwiftUICell.swift */,
 				04C4635D2D00A51800E24BF3 /* Loader.swift */,
+				04C4635F2D00CE3500E24BF3 /* AlertView.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -278,7 +283,6 @@
 		04DBBCDF2CFE89BA0007F317 /* STCGitApp */ = {
 			isa = PBXGroup;
 			children = (
-				04DCAE912CFEA247002A0B3F /* Helper */,
 				04DCAECC2CFEA34C002A0B3F /* Coordinator */,
 				04DCAEAB2CFEA2C8002A0B3F /* Infrastructure */,
 				04DCAEB32CFEA2E1002A0B3F /* Presentaion */,
@@ -342,6 +346,7 @@
 				04DCAE922CFEA24E002A0B3F /* SwiftuiWrapper.swift */,
 				04CF88432CFF674300678114 /* Obervable.swift */,
 				04CF88752CFFD4D900678114 /* BaseViewController.swift */,
+				04C463612D00F5EA00E24BF3 /* Constants.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -431,6 +436,7 @@
 		04DCAEB32CFEA2E1002A0B3F /* Presentaion */ = {
 			isa = PBXGroup;
 			children = (
+				04DCAE912CFEA247002A0B3F /* Helper */,
 				04CF88512CFF9DA800678114 /* ForkedUsers */,
 				04DCAEC02CFEA319002A0B3F /* Users */,
 				04DCAEB42CFEA2EE002A0B3F /* UserGitRepos */,
@@ -649,6 +655,7 @@
 				04CF88692CFFAF8500678114 /* ForkedUserRepoImp.swift in Sources */,
 				04CF88442CFF674300678114 /* Obervable.swift in Sources */,
 				04DCAEC52CFEA32B002A0B3F /* UsersView.swift in Sources */,
+				04C463602D00CE3500E24BF3 /* AlertView.swift in Sources */,
 				04CF88622CFFAE3D00678114 /* ForkedUsersQuery.swift in Sources */,
 				04CF88762CFFD4D900678114 /* BaseViewController.swift in Sources */,
 				04DCAEBB2CFEA304002A0B3F /* UserGitReposView.swift in Sources */,
@@ -670,6 +677,7 @@
 				04DCAE9B2CFEA274002A0B3F /* User.swift in Sources */,
 				04DCAEB12CFEA2D4002A0B3F /* Requestable.swift in Sources */,
 				04DCAE942CFEA24E002A0B3F /* SwiftuiWrapper.swift in Sources */,
+				04C463622D00F5EA00E24BF3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

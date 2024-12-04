@@ -11,17 +11,31 @@ struct UsersView<genViewModel: UsersViewModel>: View {
     
     @State private var showUIKitScreen = false
     @State private var selectedIndex = 0
+    @State private var show = false
     @StateObject var viewModel: genViewModel
     
     //MARK: - Body
     var body: some View {
         ZStack {
-            contentView
-                .disabled(viewModel.isLoading)
+            VStack {
+                Text("Git Users List")
+                    .foregroundColor(Color.black)
+                
+                contentView
+                    .disabled(viewModel.isLoading)
+            }
             
             if viewModel.isLoading {
                 Loader()
             }
+            
+            AlertView(
+                isPresented: $show,
+                title: "Error",
+                message: viewModel.errorMessage) { }
+        }
+        .onChange(of: viewModel.showError) { newValue in
+            show = newValue
         }
     }
     
@@ -29,11 +43,10 @@ struct UsersView<genViewModel: UsersViewModel>: View {
     var contentView: some View {
         List {
             ForEach(0..<viewModel.items.count, id: \.self) { index in
-                UserRow(user: viewModel.items[index])
-                    .onTapGesture {
-                        selectedIndex = index
-                        showUIKitScreen.toggle()
-                    }
+                UserRow(user: viewModel.items[index]) {
+                    selectedIndex = index
+                    showUIKitScreen.toggle()
+                }
             }
         }
         .onAppear {

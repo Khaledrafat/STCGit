@@ -14,6 +14,8 @@ protocol UserViewModelInput {
 protocol UserViewModelOutput {
     var items: Users { get }
     var isLoading: Bool { get }
+    var showError: Bool { get set }
+    var errorMessage: String { get }
 }
 
 protocol UsersViewModel: UserViewModelInput, UserViewModelOutput, ObservableObject { }
@@ -23,6 +25,8 @@ final class DefaultUsersViewModel {
     private let usersUseCases: UsersUseCases
     @Published var items: Users = []
     @Published var isLoading: Bool = false
+    @Published var showError: Bool = false
+    var errorMessage: String = ""
     
     //MARK: - INIT
     init(usersUseCases: UsersUseCases) {
@@ -47,7 +51,10 @@ extension DefaultUsersViewModel: UsersViewModel {
                     self.items = users
                 }
             case .failure(let error):
-                print(error.localizedDescription)
+                DispatchQueue.main.async {
+                    self.errorMessage = error.localizedDescription
+                    self.showError = true
+                }
             }
         }
     }

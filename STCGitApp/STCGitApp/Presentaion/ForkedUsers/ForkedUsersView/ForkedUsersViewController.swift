@@ -48,6 +48,17 @@ class ForkedUsersViewController: UIViewController {
                 show ? self.baseVCActions?.showLoader(on: self) : self.baseVCActions?.hideLoader()
             }
         }
+        
+        //Error
+        self.viewModel?.showError.observe(on: self) { [weak self] error in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                guard !error.isEmpty else { return }
+                self.baseVCActions?.showAlert(on: self, title: "Error", message: error, action: {
+                    self.baseVCActions?.dismissAlert()
+                } )
+            }
+        }
     }
     
     //MARK: - Setup Collection
