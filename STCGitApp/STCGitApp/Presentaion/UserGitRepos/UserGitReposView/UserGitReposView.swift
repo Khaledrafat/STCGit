@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserGitReposView: BaseViewController {
+class UserGitReposView: UIViewController {
     
     //Outlets
     @IBOutlet weak var reposTableView: UITableView!
@@ -15,21 +15,38 @@ class UserGitReposView: BaseViewController {
     
     //Variables
     var viewModel: UserGitRepos!
+    var baseVCActions: BaseViewAction?
     
     //MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTableView()
+        setupScreen()
         viewModel.viewDidLoad()
         bind()
     }
     
+    //MARK: - Setup Screen
+    private func setupScreen() {
+        if baseVCActions == nil {
+            baseVCActions = DefaultBaseViewAction()
+        }
+        setupTableView()
+    }
+    
     //MARK: - Binding
     private func bind() {
+        //Data
         self.viewModel.gitRepos.observe(on: self) { [weak self] _ in
             DispatchQueue.main.async {
                 self?.reposTableView.reloadData()
-                self?.reposTableView.layoutIfNeeded()
+            }
+        }
+        
+        //Loader
+        self.viewModel.isLoading.observe(on: self) { [weak self] show in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                show ? self.baseVCActions?.showLoader(on: self) : self.baseVCActions?.hideLoader()
             }
         }
     }

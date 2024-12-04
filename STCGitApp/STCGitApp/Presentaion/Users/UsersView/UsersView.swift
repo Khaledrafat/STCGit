@@ -7,14 +7,26 @@
 
 import SwiftUI
 
-struct UsersView: View {
+struct UsersView<genViewModel: UsersViewModel>: View {
     
     @State private var showUIKitScreen = false
     @State private var selectedIndex = 0
-    @StateObject var viewModel: DefaultUsersViewModel = DefaultUsersViewModel(usersUseCases: DefaultUsersUseCases(usersRepo: DefaultUsersRepo(network: DefaultNetworkService())))
+    @StateObject var viewModel: genViewModel
     
     //MARK: - Body
     var body: some View {
+        ZStack {
+            contentView
+                .disabled(viewModel.isLoading)
+            
+            if viewModel.isLoading {
+                Loader()
+            }
+        }
+    }
+    
+    //MARK: - ContentView
+    var contentView: some View {
         List {
             ForEach(0..<viewModel.items.count, id: \.self) { index in
                 UserRow(user: viewModel.items[index])
@@ -33,8 +45,17 @@ struct UsersView: View {
     }
 }
 
+//MARK: - Preview
 struct UsersView_Previews: PreviewProvider {
     static var previews: some View {
-        UsersView()
+        UsersView(
+            viewModel: DefaultUsersViewModel(
+                usersUseCases: DefaultUsersUseCases(
+                    usersRepo: DefaultUsersRepo(
+                        network: DefaultNetworkService()
+                    )
+                )
+            )
+        )
     }
 }

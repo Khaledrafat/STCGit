@@ -13,11 +13,10 @@ protocol ForkedUsersViewModelInput {
 
 protocol ForkedUsersViewModelOutput {
     var forkedUsers: Observable<ForkedUsers> { get }
+    var isLoading: Observable<Bool> { get }
 }
 
-protocol ForkedUsersViewModel: ForkedUsersViewModelInput, ForkedUsersViewModelOutput {
-    
-}
+protocol ForkedUsersViewModel: ForkedUsersViewModelInput, ForkedUsersViewModelOutput { }
 
 //MARK: - DefaultForkedUsersViewModel
 final class DefaultForkedUsersViewModel {
@@ -26,6 +25,7 @@ final class DefaultForkedUsersViewModel {
     private let useCases: ForkedUsersUseCases
     
     var forkedUsers: Observable<ForkedUsers> = Observable([])
+    var isLoading: Observable<Bool> = Observable(false)
     
     //MARK: - INIT
     init(userRepo: GitRepo, useCases: ForkedUsersUseCases) {
@@ -39,13 +39,14 @@ extension DefaultForkedUsersViewModel: ForkedUsersViewModel {
     func viewDidLoad() {
         guard let name = userRepo.owner?.login, let repo = userRepo.name else { return }
         let query = ForkedUsersQuery(ownerName: name, repoName: repo)
-        useCases.fetchForkedUsers(query: query) { result in
+        self.isLoading.value = true
+        useCases.fetchForkedUsers(query: query) { [weak self] result in
+            guard let self = self else { return }
+            self.isLoading.value = false
             switch result {
             case .success(let forked):
-                DispatchQueue.main.async { [weak self] in
-                    guard let self = self else { return }
-                    self.forkedUsers.value = forked
-                }
+                self.forkedUsers.value = forked
+                
             case .failure(let error):
                 print(error.localizedDescription)
             }

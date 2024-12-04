@@ -7,29 +7,47 @@
 
 import UIKit
 
-class ForkedUsersViewController: BaseViewController {
+class ForkedUsersViewController: UIViewController {
     
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var forkedUsersCollection: UICollectionView!
     
     //Variables
     var viewModel: ForkedUsersViewModel?
+    var baseVCActions: BaseViewAction?
 
     //MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupCollection()
+        setupScreen()
         bind()
         viewModel?.viewDidLoad()
     }
     
+    //MARK: - Setup Screen
+    private func setupScreen() {
+        if baseVCActions == nil {
+            baseVCActions = DefaultBaseViewAction()
+        }
+        setupCollection()
+    }
+    
     //MARK: - Binding
     private func bind() {
+        //Data
         self.viewModel?.forkedUsers.observe(on: self, observerBlock: {[weak self] _ in
             DispatchQueue.main.async {
                 self?.forkedUsersCollection.reloadData()
             }
         })
+        
+        //Loader
+        self.viewModel?.isLoading.observe(on: self) { [weak self] show in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                show ? self.baseVCActions?.showLoader(on: self) : self.baseVCActions?.hideLoader()
+            }
+        }
     }
     
     //MARK: - Setup Collection

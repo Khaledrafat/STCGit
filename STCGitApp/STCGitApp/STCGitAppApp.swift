@@ -11,7 +11,15 @@ import SwiftUI
 struct STCGitAppApp: App {
     var body: some Scene {
         WindowGroup {
-            UsersView()
+            UsersView(
+                viewModel: DefaultUsersViewModel(
+                    usersUseCases: DefaultUsersUseCases(
+                        usersRepo: DefaultUsersRepo(
+                            network: DefaultNetworkService()
+                        )
+                    )
+                )
+            )
         }
     }
 }

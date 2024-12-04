@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C4635E2D00A51800E24BF3 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4635D2D00A51800E24BF3 /* Loader.swift */; };
 		04CF88422CFF637300678114 /* UserGitReposView+tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88412CFF637300678114 /* UserGitReposView+tableView.swift */; };
 		04CF88442CFF674300678114 /* Obervable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88432CFF674300678114 /* Obervable.swift */; };
 		04CF88462CFF688900678114 /* GitReposImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88452CFF688900678114 /* GitReposImp.swift */; };
@@ -32,7 +33,6 @@
 		04CF88762CFFD4D900678114 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88752CFFD4D900678114 /* BaseViewController.swift */; };
 		04CF88772CFFD4D900678114 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88752CFFD4D900678114 /* BaseViewController.swift */; };
 		04CF887A2CFFE42E00678114 /* ForkedUserSwiftUICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88792CFFE42E00678114 /* ForkedUserSwiftUICell.swift */; };
-		04CF887B2CFFE42E00678114 /* ForkedUserSwiftUICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88792CFFE42E00678114 /* ForkedUserSwiftUICell.swift */; };
 		04CF887E2CFFF2D600678114 /* ForkedUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF887C2CFFF2D600678114 /* ForkedUserCell.swift */; };
 		04CF887F2CFFF2D600678114 /* ForkedUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF887C2CFFF2D600678114 /* ForkedUserCell.swift */; };
 		04CF88802CFFF2D600678114 /* ForkedUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CF887D2CFFF2D600678114 /* ForkedUserCell.xib */; };
@@ -95,6 +95,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04C4635D2D00A51800E24BF3 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		04CF88412CFF637300678114 /* UserGitReposView+tableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserGitReposView+tableView.swift"; sourceTree = "<group>"; };
 		04CF88432CFF674300678114 /* Obervable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obervable.swift; sourceTree = "<group>"; };
 		04CF88452CFF688900678114 /* GitReposImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitReposImp.swift; sourceTree = "<group>"; };
@@ -167,6 +168,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C4635C2D00A4F600E24BF3 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				04CF88792CFFE42E00678114 /* ForkedUserSwiftUICell.swift */,
+				04C4635D2D00A51800E24BF3 /* Loader.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
 		04CF88472CFF68F600678114 /* GitRepos */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,7 +241,6 @@
 		04CF886E2CFFB4D500678114 /* ForkedUserCell */ = {
 			isa = PBXGroup;
 			children = (
-				04CF88792CFFE42E00678114 /* ForkedUserSwiftUICell.swift */,
 				04CF887C2CFFF2D600678114 /* ForkedUserCell.swift */,
 				04CF887D2CFFF2D600678114 /* ForkedUserCell.xib */,
 			);
@@ -328,6 +337,7 @@
 		04DCAE912CFEA247002A0B3F /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				04C4635C2D00A4F600E24BF3 /* ReusableViews */,
 				04DCAE932CFEA24E002A0B3F /* Helper.swift */,
 				04DCAE922CFEA24E002A0B3F /* SwiftuiWrapper.swift */,
 				04CF88432CFF674300678114 /* Obervable.swift */,
@@ -634,6 +644,7 @@
 				04CF88422CFF637300678114 /* UserGitReposView+tableView.swift in Sources */,
 				04CF88592CFF9E0E00678114 /* ForkedUsersViewModel.swift in Sources */,
 				04CF88462CFF688900678114 /* GitReposImp.swift in Sources */,
+				04C4635E2D00A51800E24BF3 /* Loader.swift in Sources */,
 				04CF88542CFF9DCF00678114 /* ForkedUsersViewController.swift in Sources */,
 				04CF88692CFFAF8500678114 /* ForkedUserRepoImp.swift in Sources */,
 				04CF88442CFF674300678114 /* Obervable.swift in Sources */,
@@ -671,7 +682,6 @@
 				04DCAECB2CFEA330002A0B3F /* UserVM.swift in Sources */,
 				04CF886A2CFFAF8500678114 /* ForkedUserRepoImp.swift in Sources */,
 				04DCAEA52CFEA295002A0B3F /* UsersRepo.swift in Sources */,
-				04CF887B2CFFE42E00678114 /* ForkedUserSwiftUICell.swift in Sources */,
 				04CF88772CFFD4D900678114 /* BaseViewController.swift in Sources */,
 				04DCAE902CFEA235002A0B3F /* UsersRepoImp.swift in Sources */,
 				04DCAEA22CFEA291002A0B3F /* GitRepoUseCases.swift in Sources */,
