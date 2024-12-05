@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ForkedUser: Codable {
+struct ForkedUser: Codable, Equatable {
     let description: String?
     let name: String?
 }

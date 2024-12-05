@@ -10,6 +10,24 @@
 		04C4635E2D00A51800E24BF3 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4635D2D00A51800E24BF3 /* Loader.swift */; };
 		04C463602D00CE3500E24BF3 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4635F2D00CE3500E24BF3 /* AlertView.swift */; };
 		04C463622D00F5EA00E24BF3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C463612D00F5EA00E24BF3 /* Constants.swift */; };
+		04CE379A2D01FAE200E1CB1B /* ForkedUsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CF88532CFF9DCF00678114 /* ForkedUsersViewController.xib */; };
+		04CE379B2D01FAE200E1CB1B /* ForkedUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88582CFF9E0E00678114 /* ForkedUsersViewModel.swift */; };
+		04CE379C2D01FAE200E1CB1B /* ForkedUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88522CFF9DCF00678114 /* ForkedUsersViewController.swift */; };
+		04CE379D2D01FB1300E1CB1B /* Obervable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88432CFF674300678114 /* Obervable.swift */; };
+		04CE379E2D01FB1300E1CB1B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C463612D00F5EA00E24BF3 /* Constants.swift */; };
+		04CE379F2D01FB1300E1CB1B /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CBCF2D01385F004CB7A4 /* ImageCache.swift */; };
+		04CE37A02D01FB1800E1CB1B /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CBD12D013D0A004CB7A4 /* AsyncImageView.swift */; };
+		04CE37A12D01FB1800E1CB1B /* ForkedUserSwiftUICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88792CFFE42E00678114 /* ForkedUserSwiftUICell.swift */; };
+		04CE37A22D01FB1800E1CB1B /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4635F2D00CE3500E24BF3 /* AlertView.swift */; };
+		04CE37A32D01FB1800E1CB1B /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4635D2D00A51800E24BF3 /* Loader.swift */; };
+		04CE37A42D01FB2400E1CB1B /* UserGitReposView+tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88412CFF637300678114 /* UserGitReposView+tableView.swift */; };
+		04CE37A52D01FB4200E1CB1B /* GitReposRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88482CFF690D00678114 /* GitReposRepo.swift */; };
+		04CE37A62D01FB4200E1CB1B /* GitRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF884A2CFF691E00678114 /* GitRepo.swift */; };
+		04CE37A72D01FB4C00E1CB1B /* GitReposImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88452CFF688900678114 /* GitReposImp.swift */; };
+		04CE37A82D01FB5000E1CB1B /* STCGitAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBBCE02CFE89BA0007F317 /* STCGitAppApp.swift */; };
+		04CE37A92D01FB7100E1CB1B /* UserGitRepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CF884E2CFF79AF00678114 /* UserGitRepoCell.xib */; };
+		04CE37AA2D01FB7100E1CB1B /* UserGitRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF884D2CFF79AF00678114 /* UserGitRepoCell.swift */; };
+		04CE37AC2D0200CD00E1CB1B /* ForkedUserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE37AB2D0200CD00E1CB1B /* ForkedUserMock.swift */; };
 		04CF88422CFF637300678114 /* UserGitReposView+tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88412CFF637300678114 /* UserGitReposView+tableView.swift */; };
 		04CF88442CFF674300678114 /* Obervable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88432CFF674300678114 /* Obervable.swift */; };
 		04CF88462CFF688900678114 /* GitReposImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF88452CFF688900678114 /* GitReposImp.swift */; };
@@ -78,7 +96,7 @@
 		04DCAECE2CFEA353002A0B3F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCAECD2CFEA353002A0B3F /* Coordinator.swift */; };
 		04DCAECF2CFEA353002A0B3F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCAECD2CFEA353002A0B3F /* Coordinator.swift */; };
 		04F5CBC92D013286004CB7A4 /* ForkedUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CBC82D013286004CB7A4 /* ForkedUsersTests.swift */; };
-		04F5CBCC2D013323004CB7A4 /* MockedForkedUsersUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CBCB2D013323004CB7A4 /* MockedForkedUsersUseCases.swift */; };
+		04F5CBCC2D013323004CB7A4 /* GitRepoMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CBCB2D013323004CB7A4 /* GitRepoMock.swift */; };
 		04F5CBCE2D013595004CB7A4 /* UserRepoMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CBCD2D013595004CB7A4 /* UserRepoMock.swift */; };
 		04F5CBD02D01385F004CB7A4 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CBCF2D01385F004CB7A4 /* ImageCache.swift */; };
 		04F5CBD22D013D0A004CB7A4 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CBD12D013D0A004CB7A4 /* AsyncImageView.swift */; };
@@ -105,6 +123,7 @@
 		04C4635D2D00A51800E24BF3 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		04C4635F2D00CE3500E24BF3 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		04C463612D00F5EA00E24BF3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04CE37AB2D0200CD00E1CB1B /* ForkedUserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkedUserMock.swift; sourceTree = "<group>"; };
 		04CF88412CFF637300678114 /* UserGitReposView+tableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserGitReposView+tableView.swift"; sourceTree = "<group>"; };
 		04CF88432CFF674300678114 /* Obervable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obervable.swift; sourceTree = "<group>"; };
 		04CF88452CFF688900678114 /* GitReposImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitReposImp.swift; sourceTree = "<group>"; };
@@ -151,7 +170,7 @@
 		04DCAEC92CFEA330002A0B3F /* UserVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserVM.swift; sourceTree = "<group>"; };
 		04DCAECD2CFEA353002A0B3F /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		04F5CBC82D013286004CB7A4 /* ForkedUsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkedUsersTests.swift; sourceTree = "<group>"; };
-		04F5CBCB2D013323004CB7A4 /* MockedForkedUsersUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedForkedUsersUseCases.swift; sourceTree = "<group>"; };
+		04F5CBCB2D013323004CB7A4 /* GitRepoMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepoMock.swift; sourceTree = "<group>"; };
 		04F5CBCD2D013595004CB7A4 /* UserRepoMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepoMock.swift; sourceTree = "<group>"; };
 		04F5CBCF2D01385F004CB7A4 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		04F5CBD12D013D0A004CB7A4 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
@@ -555,8 +574,9 @@
 		04F5CBCA2D013311004CB7A4 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				04F5CBCB2D013323004CB7A4 /* MockedForkedUsersUseCases.swift */,
+				04F5CBCB2D013323004CB7A4 /* GitRepoMock.swift */,
 				04F5CBCD2D013595004CB7A4 /* UserRepoMock.swift */,
+				04CE37AB2D0200CD00E1CB1B /* ForkedUserMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -678,6 +698,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CE379A2D01FAE200E1CB1B /* ForkedUsersViewController.xib in Resources */,
+				04CE37A92D01FB7100E1CB1B /* UserGitRepoCell.xib in Resources */,
 				04DCAEBA2CFEA304002A0B3F /* UserGitReposView.xib in Resources */,
 				04CF88812CFFF2D600678114 /* ForkedUserCell.xib in Resources */,
 			);
@@ -744,31 +766,47 @@
 			files = (
 				04DCAECF2CFEA353002A0B3F /* Coordinator.swift in Sources */,
 				04DBBCF22CFE89BD0007F317 /* STCGitAppTests.swift in Sources */,
+				04CE37A62D01FB4200E1CB1B /* GitRepo.swift in Sources */,
+				04CE379F2D01FB1300E1CB1B /* ImageCache.swift in Sources */,
 				04DCAECB2CFEA330002A0B3F /* UserVM.swift in Sources */,
+				04CE379C2D01FAE200E1CB1B /* ForkedUsersViewController.swift in Sources */,
+				04CE37A02D01FB1800E1CB1B /* AsyncImageView.swift in Sources */,
+				04CE37AA2D01FB7100E1CB1B /* UserGitRepoCell.swift in Sources */,
+				04CE37A82D01FB5000E1CB1B /* STCGitAppApp.swift in Sources */,
 				04CF886A2CFFAF8500678114 /* ForkedUserRepoImp.swift in Sources */,
+				04CE37AC2D0200CD00E1CB1B /* ForkedUserMock.swift in Sources */,
 				04DCAEA52CFEA295002A0B3F /* UsersRepo.swift in Sources */,
 				04CF88772CFFD4D900678114 /* BaseViewController.swift in Sources */,
 				04DCAE902CFEA235002A0B3F /* UsersRepoImp.swift in Sources */,
 				04DCAEA22CFEA291002A0B3F /* GitRepoUseCases.swift in Sources */,
+				04CE379E2D01FB1300E1CB1B /* Constants.swift in Sources */,
 				04DCAEAA2CFEA2B1002A0B3F /* UsersUseCases.swift in Sources */,
 				04CF88602CFFA0CA00678114 /* ForkedUser.swift in Sources */,
+				04CE37A72D01FB4C00E1CB1B /* GitReposImp.swift in Sources */,
 				04DCAEB22CFEA2D4002A0B3F /* Requestable.swift in Sources */,
+				04CE379D2D01FB1300E1CB1B /* Obervable.swift in Sources */,
 				04DCAEB02CFEA2D4002A0B3F /* Network.swift in Sources */,
 				04DCAEBC2CFEA304002A0B3F /* UserGitReposView.swift in Sources */,
 				04CF885D2CFFA07F00678114 /* ForkedUsersUseCases.swift in Sources */,
 				04DCAE9C2CFEA274002A0B3F /* User.swift in Sources */,
 				04DCAEC62CFEA32B002A0B3F /* UsersView.swift in Sources */,
+				04CE37A12D01FB1800E1CB1B /* ForkedUserSwiftUICell.swift in Sources */,
 				04CF887F2CFFF2D600678114 /* ForkedUserCell.swift in Sources */,
 				04DCAE952CFEA24E002A0B3F /* SwiftuiWrapper.swift in Sources */,
 				04CF88672CFFAF1C00678114 /* ForkedUserRepo.swift in Sources */,
 				04CF88632CFFAE3D00678114 /* ForkedUsersQuery.swift in Sources */,
-				04F5CBCC2D013323004CB7A4 /* MockedForkedUsersUseCases.swift in Sources */,
+				04CE37A52D01FB4200E1CB1B /* GitReposRepo.swift in Sources */,
+				04CE37A32D01FB1800E1CB1B /* Loader.swift in Sources */,
+				04F5CBCC2D013323004CB7A4 /* GitRepoMock.swift in Sources */,
 				04DCAEC82CFEA32B002A0B3F /* UserRow.swift in Sources */,
+				04CE379B2D01FAE200E1CB1B /* ForkedUsersViewModel.swift in Sources */,
 				04DCAEBF2CFEA308002A0B3F /* UserGitReposViewModel.swift in Sources */,
+				04CE37A22D01FB1800E1CB1B /* AlertView.swift in Sources */,
 				04F5CBCE2D013595004CB7A4 /* UserRepoMock.swift in Sources */,
 				04CF886D2CFFB2F900678114 /* ForkedUsersViewController+Collection.swift in Sources */,
 				04DCAE972CFEA24E002A0B3F /* Helper.swift in Sources */,
 				04F5CBC92D013286004CB7A4 /* ForkedUsersTests.swift in Sources */,
+				04CE37A42D01FB2400E1CB1B /* UserGitReposView+tableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
