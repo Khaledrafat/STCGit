@@ -24,8 +24,13 @@ struct UserRow: View {
     var containerView: some View {
         VStack {
             HStack(spacing: 24) {
-                Spacer()
-                    .frame(width: 60, height: 60)
+                if let url = URL(string: (user?.avatarURL).defaultValue) {
+                    AsyncImageView(url: url)
+                        .frame(width: 60, height: 60)
+                } else {
+                    Spacer()
+                        .frame(width: 60, height: 60)
+                }
                 
                 Text((user?.login).defaultValue)
                 

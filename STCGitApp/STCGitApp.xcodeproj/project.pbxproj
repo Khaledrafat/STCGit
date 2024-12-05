@@ -77,6 +77,11 @@
 		04DCAECB2CFEA330002A0B3F /* UserVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCAEC92CFEA330002A0B3F /* UserVM.swift */; };
 		04DCAECE2CFEA353002A0B3F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCAECD2CFEA353002A0B3F /* Coordinator.swift */; };
 		04DCAECF2CFEA353002A0B3F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCAECD2CFEA353002A0B3F /* Coordinator.swift */; };
+		04F5CBC92D013286004CB7A4 /* ForkedUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CBC82D013286004CB7A4 /* ForkedUsersTests.swift */; };
+		04F5CBCC2D013323004CB7A4 /* MockedForkedUsersUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CBCB2D013323004CB7A4 /* MockedForkedUsersUseCases.swift */; };
+		04F5CBCE2D013595004CB7A4 /* UserRepoMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CBCD2D013595004CB7A4 /* UserRepoMock.swift */; };
+		04F5CBD02D01385F004CB7A4 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CBCF2D01385F004CB7A4 /* ImageCache.swift */; };
+		04F5CBD22D013D0A004CB7A4 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5CBD12D013D0A004CB7A4 /* AsyncImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +150,11 @@
 		04DCAEC42CFEA32B002A0B3F /* UserRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
 		04DCAEC92CFEA330002A0B3F /* UserVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserVM.swift; sourceTree = "<group>"; };
 		04DCAECD2CFEA353002A0B3F /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		04F5CBC82D013286004CB7A4 /* ForkedUsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkedUsersTests.swift; sourceTree = "<group>"; };
+		04F5CBCB2D013323004CB7A4 /* MockedForkedUsersUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedForkedUsersUseCases.swift; sourceTree = "<group>"; };
+		04F5CBCD2D013595004CB7A4 /* UserRepoMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepoMock.swift; sourceTree = "<group>"; };
+		04F5CBCF2D01385F004CB7A4 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		04F5CBD12D013D0A004CB7A4 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +188,7 @@
 				04CF88792CFFE42E00678114 /* ForkedUserSwiftUICell.swift */,
 				04C4635D2D00A51800E24BF3 /* Loader.swift */,
 				04C4635F2D00CE3500E24BF3 /* AlertView.swift */,
+				04F5CBD12D013D0A004CB7A4 /* AsyncImageView.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -306,6 +317,8 @@
 		04DBBCF02CFE89BD0007F317 /* STCGitAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				04F5CBC52D012FBC004CB7A4 /* Infrastructure */,
+				04F5CBC42D012FB5004CB7A4 /* Presentation */,
 				04DBBCF12CFE89BD0007F317 /* STCGitAppTests.swift */,
 			);
 			path = STCGitAppTests;
@@ -347,6 +360,7 @@
 				04CF88432CFF674300678114 /* Obervable.swift */,
 				04CF88752CFFD4D900678114 /* BaseViewController.swift */,
 				04C463612D00F5EA00E24BF3 /* Constants.swift */,
+				04F5CBCF2D01385F004CB7A4 /* ImageCache.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -506,6 +520,47 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		04F5CBC42D012FB5004CB7A4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				04F5CBC62D012FDD004CB7A4 /* ForkedUsers */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		04F5CBC52D012FBC004CB7A4 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				04F5CBC72D012FF5004CB7A4 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		04F5CBC62D012FDD004CB7A4 /* ForkedUsers */ = {
+			isa = PBXGroup;
+			children = (
+				04F5CBCA2D013311004CB7A4 /* Mocks */,
+				04F5CBC82D013286004CB7A4 /* ForkedUsersTests.swift */,
+			);
+			path = ForkedUsers;
+			sourceTree = "<group>";
+		};
+		04F5CBC72D012FF5004CB7A4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		04F5CBCA2D013311004CB7A4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				04F5CBCB2D013323004CB7A4 /* MockedForkedUsersUseCases.swift */,
+				04F5CBCD2D013595004CB7A4 /* UserRepoMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -652,10 +707,12 @@
 				04CF88462CFF688900678114 /* GitReposImp.swift in Sources */,
 				04C4635E2D00A51800E24BF3 /* Loader.swift in Sources */,
 				04CF88542CFF9DCF00678114 /* ForkedUsersViewController.swift in Sources */,
+				04F5CBD02D01385F004CB7A4 /* ImageCache.swift in Sources */,
 				04CF88692CFFAF8500678114 /* ForkedUserRepoImp.swift in Sources */,
 				04CF88442CFF674300678114 /* Obervable.swift in Sources */,
 				04DCAEC52CFEA32B002A0B3F /* UsersView.swift in Sources */,
 				04C463602D00CE3500E24BF3 /* AlertView.swift in Sources */,
+				04F5CBD22D013D0A004CB7A4 /* AsyncImageView.swift in Sources */,
 				04CF88622CFFAE3D00678114 /* ForkedUsersQuery.swift in Sources */,
 				04CF88762CFFD4D900678114 /* BaseViewController.swift in Sources */,
 				04DCAEBB2CFEA304002A0B3F /* UserGitReposView.swift in Sources */,
@@ -705,10 +762,13 @@
 				04DCAE952CFEA24E002A0B3F /* SwiftuiWrapper.swift in Sources */,
 				04CF88672CFFAF1C00678114 /* ForkedUserRepo.swift in Sources */,
 				04CF88632CFFAE3D00678114 /* ForkedUsersQuery.swift in Sources */,
+				04F5CBCC2D013323004CB7A4 /* MockedForkedUsersUseCases.swift in Sources */,
 				04DCAEC82CFEA32B002A0B3F /* UserRow.swift in Sources */,
 				04DCAEBF2CFEA308002A0B3F /* UserGitReposViewModel.swift in Sources */,
+				04F5CBCE2D013595004CB7A4 /* UserRepoMock.swift in Sources */,
 				04CF886D2CFFB2F900678114 /* ForkedUsersViewController+Collection.swift in Sources */,
 				04DCAE972CFEA24E002A0B3F /* Helper.swift in Sources */,
+				04F5CBC92D013286004CB7A4 /* ForkedUsersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

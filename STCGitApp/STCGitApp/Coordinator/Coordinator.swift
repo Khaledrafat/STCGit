@@ -5,7 +5,34 @@
 ////  Created by mac on 19/09/2023.
 ////
 //
-//import UIKit
+import UIKit
+import SwiftUI
+
+protocol Coordinator {
+    func start()
+}
+
+class AppCoordinator: Coordinator {
+    func start() {
+        
+    }
+}
+
+protocol UserGitReposCoordinator: AnyObject {
+    func openForkedUsers(repo: GitRepo)
+}
+
+class DefaultUserGitReposCoordinator: UserGitReposCoordinator {
+    func openForkedUsers(repo: GitRepo) {
+        let userRepo = DefaultForkedUserRepo()
+        let useCases = DefaultForkedUsersUseCases(repo: userRepo)
+        let vm = DefaultForkedUsersViewModel(userRepo: repo, useCases: useCases)
+        let vc = ForkedUsersViewController()
+        vc.viewModel = vm
+        vc.modalPresentationStyle = .fullScreen
+    }
+}
+
 //
 //protocol Coordinator: AnyObject {
 //    var parentCoordinator: Coordinator? { get set }

@@ -21,7 +21,6 @@ final class DefaultUsersRepo: UsersRepo {
     func fetchUsers(completion: @escaping (Result<Users, Error>) -> Void) {
         let url = "https://api.github.com/users"
         let param = ["Authorization" : Constants().githubToken]
-        //I didn't use pagination so the pagination's query is set here
         let query = ["page":"1", "per_page":"30"]
         
         let endpoint = DefaultRequestable(stringUrl: url, method: .get, headerParameters: param, queryParameters: query)
