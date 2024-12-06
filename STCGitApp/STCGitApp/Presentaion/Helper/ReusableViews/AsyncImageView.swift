@@ -21,6 +21,7 @@ struct AsyncImageView: View {
             if let image = loader.image {
                 Image(uiImage: image)
                     .resizable()
+                    .cornerRadius(4)
                     .scaledToFit()
             } else {
                 placeholder
