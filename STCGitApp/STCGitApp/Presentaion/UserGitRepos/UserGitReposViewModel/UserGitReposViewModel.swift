@@ -32,7 +32,6 @@ final class UserGitReposViewModel {
     var gitRepos: Observable<GitRepos> = Observable([])
     var isLoading: Observable<Bool> = Observable(false)
     var showError: Observable<String> = Observable("")
-    weak var coordinator: UserGitReposCoordinator?
     
     //MARK: - INIT
     init(userGitReposUseCases: UserGitReposUseCases, seletedUser: User) {

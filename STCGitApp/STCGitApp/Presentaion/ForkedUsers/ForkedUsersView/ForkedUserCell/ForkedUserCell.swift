@@ -10,7 +10,7 @@ import SwiftUI
 
 class ForkedUserCell: UICollectionViewCell {
 
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet private weak var containerView: UIView!
     
     private var hostingController: UIHostingController<ForkedUserSwiftUICell>?
     

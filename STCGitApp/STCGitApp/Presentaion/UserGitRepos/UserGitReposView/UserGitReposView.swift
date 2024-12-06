@@ -10,8 +10,8 @@ import UIKit
 class UserGitReposView: UIViewController {
     
     //Outlets
-    @IBOutlet weak var reposTableView: UITableView!
-    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet private weak var reposTableView: UITableView!
+    @IBOutlet private weak var backButton: UIButton!
     
     //Variables
     var viewModel: UserGitRepos!

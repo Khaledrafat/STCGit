@@ -9,8 +9,8 @@ import UIKit
 
 class ForkedUsersViewController: UIViewController {
     
-    @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var forkedUsersCollection: UICollectionView!
+    @IBOutlet private weak var backButton: UIButton!
+    @IBOutlet private weak var forkedUsersCollection: UICollectionView!
     
     //Variables
     var viewModel: ForkedUsersViewModel?

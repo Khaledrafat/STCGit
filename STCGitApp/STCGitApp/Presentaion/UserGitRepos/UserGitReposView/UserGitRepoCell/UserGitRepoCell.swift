@@ -13,10 +13,10 @@ protocol UserGitRepoTableCell: UITableViewCell {
 
 class UserGitRepoCell: UITableViewCell, UserGitRepoTableCell {
 
-    @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var titleLbl: UILabel!
-    @IBOutlet weak var licenseLbl: UILabel!
-    @IBOutlet weak var descLbl: UILabel!
+    @IBOutlet private weak var containerView: UIView!
+    @IBOutlet private weak var titleLbl: UILabel!
+    @IBOutlet private weak var licenseLbl: UILabel!
+    @IBOutlet private weak var descLbl: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
