@@ -27,3 +27,6 @@
 
 ## Git Note
 - the main brach has only the squash merge commit and all history can be found in development bransh.
+
+## Key Note
+- please note that for the app to run u should insert your github personal token key in **Presentation/Helper/Constants** File
