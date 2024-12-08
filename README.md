@@ -30,3 +30,6 @@
 
 ## Key Note
 - please note that for the app to run u should insert your github personal token key in **Presentation/Helper/Constants** File
+
+## Clone the repository:
+- git clone https://github.com/Khaledrafat/STCGit.git
